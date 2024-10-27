@@ -1,7 +1,68 @@
-theHarvester:
-		
-dnsrecon:To enumerate DNS records
-	dnsrecon -d target_domain
-sublist3r: to find the subdomains
-	1) sublist3r -d target_domain
+1)theHarvester:Email and subdomain enumeration
+	$theHarvester -d example.com -l 500 -b
+2)dnsrecon:To enumerate DNS records
+	$dnsrecon -d target_domain
+3)sublist3r: to find the subdomains
+	$sublist3r -d target_domain
+
+4)amass: to enumerate subdomains and virtual hosts
+	$amass enum -d target_domain	
+
+5)nikto: To scan for web server misconfigurations
+	$ nikto -h target_url
+
+6)OWASP ZAP: To perform automated scans for common web vulnerabilities
+	$ zaproxy
+
+Wpscan: to scan wordpress sites for vulnerabilites
+	$ wpscan --url target_url
+
+openVAS: a comprehensive vulnerability scanner
+	 $ openvasmd --create-task --comment "scan website" --target <target>
+
+Wapiti: web application vulnerability scanner
+	$ wapiti -u url
+
+BurpSuite: GUI based
+	
+Nmap: Network mapping and service detection
+	$nmap -sV -O -p target_domain
+	$nmap -V -A target_domain
+Recon-ng: Full featured web reconnaissance framework
+
+Maltego: GUI based
+
+shodan: search engine for internet-connected devices
+
+
+Hydra: brute-force of login forms
+	$ hydra -l username -P path/to/passwords.txt ftp://example.com
+
+john the ripper: password cracking
+	$ john --wordlist=/path/to/passwords.txt /path/to hashes
+medusa:Brute-forcing of login forms
+	$ medusa -h domain -u username -P /path/to/passwords.txt -M ftp
+
+Netcat: Simple Unix utility for reading and writing data across network connections
+	$nc -lvp port
+
+Socat: Multipurpose relay tool
+	$ socat TCP-LISTEN:8080,fork EXEC:'/bin/bash -i '
+Ncat: Versatile networking utility
+	$ncat -lvp port
+Wget:Non-interactive network downloader
+	$wget url
+Curl: command-line tool for transfering data with URls
+	$curl -I url
+Nessus : comprehensive vulnerability scanner
+
+
+Reaver: WPS attack tool
+	reaver -i wlanname -b BSSID -vv
+Aircrack-ng: wireless network cracking
+	$ aircrack-ng -w path/to/worlist.txt capture.cap
+Wireshark: you know
+
+tcpdump:Network packet capture
+	 network -i network_name -W capture.pcap
 
