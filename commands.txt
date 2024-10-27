@@ -1,0 +1,7 @@
+theHarvester:
+		
+dnsrecon:To enumerate DNS records
+	dnsrecon -d target_domain
+sublist3r: to find the subdomains
+	1) sublist3r -d target_domain
+
