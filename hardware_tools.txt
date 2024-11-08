@@ -1,0 +1,2 @@
+Netdiscover
+   $sudo netdiscover -i eth0/wlan0

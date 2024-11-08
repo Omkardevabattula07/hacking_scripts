@@ -1,0 +1,12 @@
+N-map:
+Just a normal scan of nmap of tcp (by default it scans the tcp ports)
+   $nmap 127.0.0.1 (or) $nmap -sT 127.0.0.1
+How to scan a udp (slower compare to the TCP)
+   $nmap -sU 127.0.0.1	
+How to scan all the ports along with the default nmap scan ports
+   $nmap -sT -p-(scans all the ports) 127.0.0.1
+See how many devices are connected in the network
+   $nmap -sn 127.0.0.1/16 (It will be using the subnetting)
+To scan certain address in a time 
+   $namp -sn 127.0.0.1-255 (Here it scans 255 ip address the last subnet number)
+

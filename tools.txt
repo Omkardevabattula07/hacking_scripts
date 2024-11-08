@@ -1,3 +1,6 @@
+serveo.net port forwarding..
+ssh -R 80:localhost:portnumber serveo.net
+
 1)theHarvester:Email and subdomain enumeration
 	$theHarvester -d example.com -l 500 -b
 2)dnsrecon:To enumerate DNS records
@@ -14,55 +17,55 @@
 6)OWASP ZAP: To perform automated scans for common web vulnerabilities
 	$ zaproxy
 
-Wpscan: to scan wordpress sites for vulnerabilites
+7)Wpscan: to scan wordpress sites for vulnerabilites
 	$ wpscan --url target_url
 
-openVAS: a comprehensive vulnerability scanner
+8)openVAS: a comprehensive vulnerability scanner
 	 $ openvasmd --create-task --comment "scan website" --target <target>
 
-Wapiti: web application vulnerability scanner
+9)Wapiti: web application vulnerability scanner
 	$ wapiti -u url
 
-BurpSuite: GUI based
+10)BurpSuite: GUI based
 	
-Nmap: Network mapping and service detection
+11)Nmap: Network mapping and service detection
 	$nmap -sV -O -p target_domain
 	$nmap -V -A target_domain
-Recon-ng: Full featured web reconnaissance framework
+12)Recon-ng: Full featured web reconnaissance framework
 
-Maltego: GUI based
+13)Maltego: GUI based
 
-shodan: search engine for internet-connected devices
+14)shodan: search engine for internet-connected devices
 
 
-Hydra: brute-force of login forms
+15)Hydra: brute-force of login forms
 	$ hydra -l username -P path/to/passwords.txt ftp://example.com
 
-john the ripper: password cracking
+16)john the ripper: password cracking
 	$ john --wordlist=/path/to/passwords.txt /path/to hashes
-medusa:Brute-forcing of login forms
+17)medusa:Brute-forcing of login forms
 	$ medusa -h domain -u username -P /path/to/passwords.txt -M ftp
 
-Netcat: Simple Unix utility for reading and writing data across network connections
+18)Netcat: Simple Unix utility for reading and writing data across network connections
 	$nc -lvp port
 
-Socat: Multipurpose relay tool
+19)Socat: Multipurpose relay tool
 	$ socat TCP-LISTEN:8080,fork EXEC:'/bin/bash -i '
-Ncat: Versatile networking utility
+20)Ncat: Versatile networking utility
 	$ncat -lvp port
-Wget:Non-interactive network downloader
+21)Wget:Non-interactive network downloader
 	$wget url
-Curl: command-line tool for transfering data with URls
+22Curl: command-line tool for transfering data with URls
 	$curl -I url
-Nessus : comprehensive vulnerability scanner
+23)Nessus : comprehensive vulnerability scanner
 
 
-Reaver: WPS attack tool
+24)Reaver: WPS attack tool
 	reaver -i wlanname -b BSSID -vv
-Aircrack-ng: wireless network cracking
+25)Aircrack-ng: wireless network cracking
 	$ aircrack-ng -w path/to/worlist.txt capture.cap
-Wireshark: you know
+26)Wireshark: you know
 
-tcpdump:Network packet capture
+27)tcpdump:Network packet capture
 	 network -i network_name -W capture.pcap
 

@@ -1,0 +1,8 @@
+
+
+Save terminal output into the txt file :
+$ command > output.txt
+Overwrite and append the output in a file:
+$ command >> output.txt
+wordlists path:
+$usr/share
