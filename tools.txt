@@ -67,5 +67,9 @@ ssh -R 80:localhost:portnumber serveo.net
 26)Wireshark: you know
 
 27)tcpdump:Network packet capture
-	 network -i network_name -W capture.pcap
+	$ network -i network_name -W capture.pcap
 
+28)macchanger: To change the macaddress
+	$ sudo macchanger -A wlan0/eth0
+29)netdiscover: To find out how many devices are connected to the wifi 
+	$sudo netdiscover -p -i eth0/wlan0
