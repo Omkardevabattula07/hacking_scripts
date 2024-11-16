@@ -13,3 +13,5 @@ $search payloadname
 $show payloads 
 #shows advanced payloads
 $show advanced
+LHOST = It is attacker ip address
+RHOST = It is the victim ip address
