@@ -1,0 +1,5 @@
+Airmom: tool used for the hacking
+    To kill any wlan0
+    $sudo airmon-ng check kill
+    To start the wlan0 to moniter mode 
+    $sudo airmong-ng start wlan0

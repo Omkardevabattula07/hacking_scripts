@@ -73,3 +73,12 @@ ssh -R 80:localhost:portnumber serveo.net
 	$ sudo macchanger -A wlan0/eth0
 29)netdiscover: To find out how many devices are connected to the wifi 
 	$sudo netdiscover -p -i eth0/wlan0
+30)host: Retrive the IPv4 and IP v6
+	$host domain_name
+31)nslookup:Retrive the ip address of the domain name 
+	$nslookup domain_name or ip_address
+32)dig: retrive the dns records
+	$dig domain_name or ip_address NS(name servers)
+33)spiderfoot: For scanning the website
+	$spiderfoot	-l 0.0.0.0:port_number
+		
