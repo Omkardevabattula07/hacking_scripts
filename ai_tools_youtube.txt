@@ -1,0 +1,2 @@
+1)VENNGAGE - tool for editing templates
+2)DeepAI - for image generation
