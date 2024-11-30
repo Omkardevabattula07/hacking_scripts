@@ -1,3 +1,6 @@
 docker build -t imagename path
 
 docker run -p ports:port imagesname
+
+--TO USE THE HTML PAGE WITH THE NGINX DOCKER IMAGE
+docker run -d -p 8000:80 -v address_to_folder_with_files_locally:/usr/share/nginx/html --name my-nginx-server nginx
